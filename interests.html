@@ -197,7 +197,7 @@
     </footer>
     <script>
         function initMap() {
-            var map = new google.maps.Map(document.getElementByID("map"), {
+            var map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 3,
                 center: {
                     lat: 46.619261,
@@ -206,21 +206,16 @@
             });
         }
     </script>
-        var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'}); 
-    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6c6vXtzTBGL6gaYFSmZ0N6I09pjY6YWk&callback=initMap"
-    type="text/javascript"></script>
-
-    <!--<script src="/maps/documentation/javascript/examples/markerclusterer/markerclustererplus@4.0.1.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6c6vXtzTBGL6gaYFSmZ0N6I09pjY6YWk&callback=initMap"></script>-->
+    
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6c6vXtzTBGL6gaYFSmZ0N6I09pjY6YWk&callback=initMap"></script>
 
     <!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6c6vXtzTBGL6gaYFSmZ0N6I09pjY6YWk&callback=initMap"
   type="text/javascript"></script>-->
 
     <!--<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
-    <script src="assets/js/maps.js"></script>-->
+    
 </body>
 
 </html>
